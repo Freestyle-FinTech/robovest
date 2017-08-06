@@ -1,0 +1,3 @@
+graft robovest/templates
+graft robovest/static
+include robovest/schema.sql

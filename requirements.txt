@@ -5,7 +5,6 @@ cycler==0.10.0
 dj-database-url==0.4.1
 Django==1.11
 Flask==0.12.2
--e git+https://github.com/Freestyle-FinTech/flaskr1.git@e0ac42d85dd5962e44eaed9809b79dfba2355fa2#egg=flaskr
 gunicorn==19.6.0
 idna==2.5
 itsdangerous==0.24
@@ -28,7 +27,7 @@ requests==2.9.1
 requests-file==1.4.2
 requests-ftp==0.3.1
 requests-oauthlib==0.8.0
--e git+https://github.com/Freestyle-FinTech/robovest.git@953c5ccba6cca42f9f864e9a65c0b5bc92150013#egg=robovest
+-e git+https://github.com/Freestyle-FinTech/robovest.git@055cd60e0739ee99488260d34dbeb1a0b016600c#egg=robovest
 sendgrid==4.2.0
 six==1.10.0
 SQLAlchemy==1.1.13

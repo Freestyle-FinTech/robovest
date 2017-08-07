@@ -60,7 +60,7 @@ def portfolio(score):
     #daily_closing_prices = daily_closing_prices[list(daily_closing_prices.columns[:8])]
     tickers = ["MINT","EMB","IAU","VCIT","MUB","SCHA","VEA","VYM","SCHH","VWO","FENY","VTIP","VGLT","ITE"]
     daily_closing_prices = daily_closing_prices[tickers]
-    daily_closing_prices.to_csv("portfolio.csv", sep=',')
+    #daily_closing_prices.to_csv("portfolio.csv", sep=',')
 
 
     # Mean_Variance Theory

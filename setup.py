@@ -5,7 +5,7 @@ setup(
     packages=['robovest'],
     include_package_data=True,
     install_requires=[
-        'flask',
+        'flask','nltk',
     ],
     setup_requires=[
         'pytest-runner',

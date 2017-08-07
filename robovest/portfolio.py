@@ -1,4 +1,5 @@
 import csv
+import os
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.pylab as pylab
@@ -224,16 +225,17 @@ def portfolio(score):
     plt.title('Black-Litterman Market Implied')
     plt.ylabel('Annualized Expected Return')
     plt.xlabel('Standard Deviation as Risk')
-    pylab.savefig('/Users/Asad/Desktop/robovest/robovest/static/plot.png')
+    dir_path = os.path.dirname(os.path.realpath(__file__))
+    pylab.savefig(dir_path+'/static/plot.png')
     plt.close()
-
 
     y_pos = np.arange(len(tickers))
     plt.bar(y_pos, weights_bl, align='center', alpha=0.5)
     plt.xticks(y_pos, tickers, fontsize = 5)
     plt.ylabel('Percentage')
     plt.title('Portfolio Weights')
-    pylab.savefig('/Users/Asad/Desktop/robovest/robovest/static/weights.png')
+    pylab.savefig(dir_path+'/static/weights.png')
+    #pylab.savefig('/Users/Asad/Desktop/robovest/robovest/static/weights.png')
     plt.close()
 
     return weights_bl, return_bl, risk_bl*100

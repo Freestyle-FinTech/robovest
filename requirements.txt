@@ -27,7 +27,7 @@ requests==2.9.1
 requests-file==1.4.2
 requests-ftp==0.3.1
 requests-oauthlib==0.8.0
--e git+https://github.com/Freestyle-FinTech/robovest.git@055cd60e0739ee99488260d34dbeb1a0b016600c#egg=robovest
+-e git+https://github.com/Freestyle-FinTech/robovest.git@5e082da645672e19ab150f4801449b3fa165fda5#egg=robovest
 sendgrid==4.2.0
 six==1.10.0
 SQLAlchemy==1.1.13

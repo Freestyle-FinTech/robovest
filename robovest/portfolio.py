@@ -227,7 +227,7 @@ def portfolio(score):
     plt.xlabel('Standard Deviation as Risk')
     #dir_path = os.path.dirname(os.path.realpath(__file__))
     #pylab.savefig(dir_path+'/static/plot.png')
-    pylab.savefig('/Users/Asad/Desktop/robovest/robovest/static/weights.png')
+    pylab.savefig('plot.png')
     plt.close()
 
     y_pos = np.arange(len(tickers))
@@ -236,7 +236,7 @@ def portfolio(score):
     plt.ylabel('Percentage')
     plt.title('Portfolio Weights')
     #pylab.savefig(dir_path+'/static/weights.png')
-    pylab.savefig('/Users/Asad/Desktop/robovest/robovest/static/weights.png')
+    pylab.savefig('weights.png')
     plt.close()
 
     return weights_bl, return_bl, risk_bl*100

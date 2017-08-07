@@ -66,6 +66,47 @@ brew install python3
 
 > NOTE: If you choose to install Python 3 on a Mac using Homebrew, be aware that if you see references to running `python` you should instead run `python3`, and if you see references to `pip` you should instead run `pip3`.
 
+## Set Twitter Environment Variables
+
+Set a new environment variables called for Twitter API Authorization:
+
+```shell
+# Mac Terminal:
+echo export "TWITTER_API_KEY=F29b8D6lDVJ1T6BNzXN5a9xcX" >> ~/.bash_profile
+echo export "TWITTER_API_SECRET=SxVsXszZ6fw5X48SvINQuXXTFqPVL3dH8JTcnEArr5H1SFMEmK" >> ~/.bash_profile
+echo export "TWITTER_ACCESS_TOKEN=890374586323398657-DWt985sWMhbeBq1T26jYUdfuMlk2TDc" >> ~/.bash_profile
+echo export "TWITTER_ACCESS_TOKEN_SECRET=88d81mDuJSuGEqqkkX1FqbVxXIMFGwbi8TbMyTm7guha0" >> ~/.bash_profile
+# ... or more commonly, place inside ~/.bash_profile the following contents:
+# export TWITTER_API_KEY=F29b8D6lDVJ1T6BNzXN5a9xcX
+# export TWITTER_API_SECRET=SxVsXszZ6fw5X48SvINQuXXTFqPVL3dH8JTcnEArr5H1SFMEmK
+# export TWITTER_ACCESS_TOKEN=890374586323398657-DWt985sWMhbeBq1T26jYUdfuMlk2TDc
+# export TWITTER_ACCESS_TOKEN_SECRET=88d81mDuJSuGEqqkkX1FqbVxXIMFGwbi8TbMyTm7guha0
+
+# Windows Command Prompt:
+set TWITTER_API_KEY="F29b8D6lDVJ1T6BNzXN5a9xcX"
+set TWITTER_API_SECRET="SxVsXszZ6fw5X48SvINQuXXTFqPVL3dH8JTcnEArr5H1SFMEmK"
+set TWITTER_ACCESS_TOKEN="890374586323398657-DWt985sWMhbeBq1T26jYUdfuMlk2TDc"
+set TWITTER_ACCESS_TOKEN_SECRET="88d81mDuJSuGEqqkkX1FqbVxXIMFGwbi8TbMyTm7guha0"
+# or use `setx NYU_INFO_2335="SecretPassword123"` to set this variable globally
+```
+
+>NOTE: On a Mac, you should be able to see and manage environment variables within a hidden file called
+`~/.bash_profile`.
+
+After setting a new environment variable, exit and re-open your command-line application for the changes to take affect.
+
+### Getting
+
+You will know it worked if you can access the environment variable from the command-line:
+
+```shell
+# Mac Terminal:
+echo $TWITTER_API_KEY #> F29b8D6lDVJ1T6BNzXN5a9xcX
+
+# Windows Command Prompt:
+echo %TWITTER_API_KEY% #> F29b8D6lDVJ1T6BNzXN5a9xcX
+```
+
 ## RoboVest Installation Instructions
 
 (Assuming python is installed)

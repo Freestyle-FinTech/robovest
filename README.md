@@ -111,17 +111,35 @@ echo %TWITTER_API_KEY% #> F29b8D6lDVJ1T6BNzXN5a9xcX
 
 (Assuming python is installed)
 
--Clone Robovest repository to your local machine;
--Using CLI, navigate to the fork you just cloned;
--Install flask editable using “pip3 install --editable .” in a virtual environment
--Setup Environment Variables using “export FLASK_APP=robovest
-export FLASK_DEBUG=true”;
--Type “flask initdb” to initialize the database; Should expect an instruction “Initialized the database.”
--Type “flask run”; Should expect following options:
-“* Serving Flask app "robovest"
- * Forcing debug mode on
- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
- * Restarting with stat
- * Debugger is active!
- * Debugger PIN: 315-246-517”
--Copy http://127.0.0.1:5000/ to your web browser to start using the APP.
+1. Clone Robovest repository to your local machine;
+
+2. Using CLI, navigate to the fork you just cloned;
+
+3. Install flask editable using ```pip3 install --editable .``` in a virtual environment
+
+4. Setup Environment Variables using
+```shell
+export FLASK_APP=robovest
+export FLASK_DEBUG=true
+```
+
+5. Type```flask initdb```to initialize the database
+
+   Should expect an instruction: Initialized the database
+
+6. Type ```flask run ```
+
+   Should expect following options:
+   “* Serving Flask app "robovest"
+
+    * Forcing debug mode on
+ 
+    * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ 
+    * Restarting with stat
+ 
+    * Debugger is active!
+ 
+    * Debugger PIN: 315-246-517”
+ 
+6. Copy http://127.0.0.1:5000/ to your web browser to start using the APP.
